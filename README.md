@@ -44,3 +44,6 @@ Python pract "Квест-мастер: Генератор приключений
 ```bash
 pip install PyQt6 Jinja2 weasyprint python-docx qrcode[pil] pytest
 
+Тест «Босс-файт»
+python -m pytest tests/test_boss_fight.py -v
+
