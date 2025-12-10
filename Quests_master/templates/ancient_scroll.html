@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: 'Uncial Antiqua', serif;
+      background: #f4e4bc url("data:image/png;base64,") repeat;
+      padding: 40px;
+      color: #3b2f1c;
+    }
+    h1 { letter-spacing: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Древний свиток квеста #{{ quest.id }}</h1>
+  <p><strong>Название:</strong> {{ quest.title }}</p>
+  <p><strong>Древняя сложность:</strong> {{ quest.difficulty }}</p>
+  <p><strong>Обет награды:</strong> {{ quest.reward }} золотых.</p>
+  <p><strong>Слова свитка:</strong></p>
+  <p>{{ quest.description }}</p>
+  <p><em>Свиток пробуждён в {{ now.strftime('%Y-%m-%d %H:%M') }}...</em></p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body { font-family: 'Uncial Antiqua', serif; background: #f4e4bc; padding: 40px; }
+    .seal { width: 100px; height: 100px; border: 5px solid #8B0000; border-radius: 50%; }
+  </style>
+</head>
+<body>
+  <h1>Контракт Гильдии Приключенцев #{{ quest.id }}</h1>
+  <p><strong>Название:</strong> {{ quest.title }}</p>
+  <p><strong>Сложность:</strong> {{ quest.difficulty }}</p>
+  <p><strong>Вознаграждение:</strong> {{ quest.reward }} золотых</p>
+  <p><strong>Описание:</strong> {{ quest.description }}</p>
+  <p><strong>Дедлайн:</strong> {{ quest.deadline }}</p>
+  <p><strong>Дата выдачи:</strong> {{ now.strftime('%Y-%m-%d %H:%M') }}</p>
+  {% if qr_code_path %}
+    <p>QR-код задания:</p>
+    <img src="{{ qr_code_path }}" alt="QR">
+  {% endif %}
+  <div class="seal">Печать гильдии</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: 'Uncial Antiqua', serif;
+      background: radial-gradient(circle, #fffbe6, #f4e4bc);
+      padding: 60px;
+      border: 10px double #8B0000;
+    }
+    h1 { text-align: center; text-transform: uppercase; }
+  </style>
+</head>
+<body>
+  <h1>Королевский указ №{{ quest.id }}</h1>
+  <p>По воле короля, объявляется квест:</p>
+  <p><strong>«{{ quest.title }}»</strong></p>
+  <p>Сложность: {{ quest.difficulty }}.</p>
+  <p>Вознаграждение: {{ quest.reward }} золотых монет.</p>
+  <p>Описание: {{ quest.description }}</p>
+  <p>Дедлайн выполнения к {{ quest.deadline }}.</p>
+  <p>Подписано в {{ now.strftime('%Y-%m-%d') }}.</p>
+</body>
+</html>
