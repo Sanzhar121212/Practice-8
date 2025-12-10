@@ -16,7 +16,6 @@ Python pract "Квест-мастер: Генератор приключений
 - Шаблоны и экспорт:
   - HTML-шаблоны на **Jinja2** (`royal_decree.html`, `guild_contract.html`, `ancient_scroll.html`);
   - экспорт в **PDF** (WeasyPrint) и **DOCX** (python-docx);
-  - опционально: генерация QR-кода (библиотека `qrcode[pil]`).
 
 - Редактор карты:
   - холст 800×600, фон «пергамент»;
